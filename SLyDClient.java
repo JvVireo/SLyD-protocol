@@ -48,6 +48,7 @@ public abstract class SLyDClient {
         if (locator.substring( 7) == null && locator.contains(":")) {
             throw new IllegalSLyDFormatExpertion("no port!");
         }
+ SlyDLocator = locator;
     }
     public final void Connect(){
                 String githubUrl = "https://raw.githubusercontent.com/JvVireo/SLyD-protocol/main/serverlist.txt"; // Замените на реальный URL
